@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.summary.MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="Welcome"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:background="#07e2f5"/>
+
+    <EditText
+        android:id="@+id/login_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入用户名"/>
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入密码"/>
+    <TextView
+        android:id="@+id/login_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新用户注册"
+        android:textColor="#0a94f7"/>
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7cf50a"
+        android:text="登陆"/>
+
+
+</LinearLayout>

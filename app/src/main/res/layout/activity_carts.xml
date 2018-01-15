@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.summary.view.CartsActivity">
+    <TextView
+        android:text="购物车"
+        android:textSize="30dp"
+        android:textColor="#f95c08"
+        android:layout_marginLeft="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ExpandableListView
+        android:id="@+id/expandablelistview_show"
+        android:layout_width="match_parent"
+        android:layout_height="900dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:divider="@null"
+        ></ExpandableListView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f7b308">
+        <CheckBox
+            android:id="@+id/cb_all"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:id="@+id/tv_all_price"
+                android:textSize="20dp"
+                android:text="合计:￥0.0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_all_geshu"
+                android:text="总计:0个商品"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/bt_jeisuan"
+            android:text="去结算"
+            android:textSize="20dp"
+            android:background="#eaff00"
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>
